@@ -4,12 +4,13 @@ import ApperIcon from "@/components/ApperIcon";
 import { cn } from "@/utils/cn";
 
 const Sidebar = ({ isOpen, onClose }) => {
-  const navigation = [
+const navigation = [
     { name: "Dashboard", href: "/", icon: "LayoutDashboard" },
     { name: "Farms", href: "/farms", icon: "Map" },
     { name: "Crops", href: "/crops", icon: "Sprout" },
     { name: "Tasks", href: "/tasks", icon: "CheckSquare" },
     { name: "Weather", href: "/weather", icon: "Cloud" },
+    { name: "Inventory", href: "/inventory", icon: "Box" },
     { name: "Finances", href: "/finances", icon: "DollarSign" }
   ];
 

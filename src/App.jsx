@@ -11,7 +11,7 @@ import Crops from "@/components/pages/Crops";
 import Tasks from "@/components/pages/Tasks";
 import Weather from "@/components/pages/Weather";
 import Finances from "@/components/pages/Finances";
-
+import Inventory from "@/components/pages/Inventory";
 // Redux slice for user management
 const userSlice = createSlice({
   name: 'user',
@@ -240,7 +240,7 @@ function AppContent() {
     });
   }, []);
 
-  const getPageTitle = (pathname) => {
+const getPageTitle = (pathname) => {
     switch (pathname) {
       case "/": return "Dashboard";
       case "/farms": return "Farms";
@@ -248,6 +248,7 @@ function AppContent() {
       case "/tasks": return "Tasks";
       case "/weather": return "Weather";
       case "/finances": return "Finances";
+      case "/inventory": return "Inventory";
       default: return "FarmFlow";
     }
   };
@@ -303,13 +304,14 @@ function AppContent() {
                   />
                   
                   <main className="flex-1">
-                    <Routes>
+<Routes>
                       <Route path="/" element={<Dashboard />} />
                       <Route path="/farms" element={<Farms />} />
                       <Route path="/crops" element={<Crops />} />
                       <Route path="/tasks" element={<Tasks />} />
                       <Route path="/weather" element={<Weather />} />
                       <Route path="/finances" element={<Finances />} />
+                      <Route path="/inventory" element={<Inventory />} />
                     </Routes>
                   </main>
                 </div>
