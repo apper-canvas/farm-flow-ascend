@@ -3,7 +3,7 @@ import Button from '@/components/atoms/Button';
 import Input from '@/components/atoms/Input';
 import Select from '@/components/atoms/Select';
 import ApperIcon from '@/components/ApperIcon';
-import farmService from '@/services/api/farmService';
+import { farmService } from '@/services/api/farmService';
 
 const InventoryForm = ({ item, onSubmit, onCancel, loading }) => {
   const [formData, setFormData] = useState({
