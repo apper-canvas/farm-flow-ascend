@@ -239,9 +239,9 @@ const InventoryForm = ({ item, onSubmit, onCancel, loading }) => {
             Cancel
           </Button>
           <Button
-            type="submit"
-            loading={loading}
-            disabled={loading}
+type="submit"
+            loading={Boolean(loading)}
+            disabled={Boolean(loading)}
           >
             {loading ? 'Saving...' : (item ? 'Update Item' : 'Add Item')}
           </Button>
