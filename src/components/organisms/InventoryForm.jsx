@@ -117,9 +117,9 @@ const InventoryForm = ({ item, onSubmit, onCancel, loading }) => {
     }
   };
 
-  const farmOptions = farms.map(farm => ({
+const farmOptions = farms.map(farm => ({
     value: farm.Id.toString(),
-    label: farm.Name
+    label: farm.name
   }));
 
   return (
